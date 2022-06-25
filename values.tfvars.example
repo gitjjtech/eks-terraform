@@ -1,0 +1,15 @@
+availability_zones                   = ["us-east-1a", "us-east-1b", "us-east-1c"]
+aws_region                           = "us-east-1"
+environment                          = "test"
+vpc_cidr                             = "172.16.0.0/16"
+vpc_name                             = "test-vpc"
+private_subnets                      = ["172.16.1.0/24", "172.16.2.0/24", "172.16.3.0/24"]
+public_subnets                       = ["172.16.4.0/24", "172.16.5.0/24", "172.16.6.0/24"]
+eks_cluster_name                     = "test-eks"
+eks_cluster_version                  = "1.22"
+node_keyname                         = "test-eks"
+node_count_desired                   = 3
+node_count_max                       = 10
+node_count_min                       = 3
+node_instance_types                  = ["t3.medium"]
+cluster_endpoint_public_access_cidrs = ["ip-address-to-access-the-cluster/32"]
